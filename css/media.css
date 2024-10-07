@@ -76,7 +76,7 @@
   /* chefs */
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .home .container .btn-group {
     flex-direction: column;
     gap: 15px;
@@ -171,9 +171,8 @@
     width: 100%;
   }
 }
-/* contact */
+
 @media screen and (max-width: 768px) {
-  /* contact */
   .contact .contact-items {
     flex-direction: column;
     align-items: center;
@@ -186,6 +185,7 @@
     gap: 0;
   }
 }
+
 /* footer */
 @media screen and (max-width: 1200px) {
   .foot .container {
@@ -214,5 +214,21 @@
   }
   .foot .container .foot-media {
     width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .foot{
+    padding: 20px;
+  }
+  .foot .foot-input input {
+    flex-direction: column;
+    width: 100%;
+  }
+  .foot .foot-input .btn1 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .foot-details{
+    order: 1;
   }
 }

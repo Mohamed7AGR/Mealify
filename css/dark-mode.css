@@ -1,0 +1,50 @@
+body:has(.mode input:checked){
+  background-color: var(--bg-color);
+}
+:root:has(.mode input:checked) {
+  --hue: 35;
+  --lightness: 44%;
+  --saturation: 72%;
+  --main-color: #fff;
+  --color-default: #fff;
+  --secondary-color: #9f9f9f;
+  --bg-color: #252525;
+  --light-hue: 0;
+  --light-saturation: 0%;
+  --light-lightness: 9%;
+  --color-light: hsl(
+    var(--light-hue),
+    var(--light-saturation),
+    var(--light-lightness)
+  );
+}
+
+body:not(:has(:target)):has(.mode input:checked) .home-active,
+body:has(.home:target):has(.mode input:checked) .home-active,
+body:has(.chefs:target):has(.mode input:checked) .chefs-active,
+body:has(.gallery:target):has(.mode input:checked) .gallery-active,
+body:has(.contact:target):has(.mode input:checked) .contact-active {
+  color: #fff;
+}
+
+body:not(:has(:target)) .home-active::before,
+body:has(.home:target) .home-active::before,
+body:has(.chefs:target) .chefs-active::before,
+body:has(.gallery:target) .gallery-active::before,
+body:has(.contact:target) .contact-active::before {
+  width: 100%;
+}
+
+body:has(.mode input:checked) .navbar .container .links a:hover {
+  color: #fff;
+}
+
+body:has(.mode input:checked) .mode .light {
+  display: block;
+}
+
+body:has(.mode input:checked) .mode .dark {
+  display: none;
+}
+ 
+   

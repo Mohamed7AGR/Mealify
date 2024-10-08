@@ -387,7 +387,8 @@ body:has(.nav-links:target) nav {
 
 /* gallery */
 .gallery .container {
-  max-width: 85%;
+  max-width: 70%;
+  
 }
 .gallery .container .gallery-image {
   display: flex;

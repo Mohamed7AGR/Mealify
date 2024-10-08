@@ -128,19 +128,25 @@
   }
 }
 /* .gallery */
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .gallery .container .gallery-image {
     height: 1000px;
   }
 }
 @media screen and (max-width: 1400px) {
   .gallery .container .gallery-image {
-    height: 850px;
+    height: 904px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .gallery .container .gallery-image {
+    height: 749px;
   }
 }
 @media screen and (max-width: 992px) {
   .gallery .container .gallery-image {
-    height: 1620px;
+    height: 1335px;
+
   }
   .gallery .container .gallery-image figure {
     width: calc(((100% - var(--gap))) / 2);
